@@ -1,21 +1,19 @@
-name: gdal_env
+name: geo_ml
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7  
+  - python=3.8
+  - h5py
   - gdal
-  - pip
+  - fiona
+  - shapely
+  - pyproj
   - numpy
   - pandas
   - matplotlib
   - scikit-learn
-  - fiona
-  - shapely
-  - opencv=4.5.5
+  - opencv
   - pyshp
   - scikit-image
-  - pyproj
-  - pip:
-    - tensorflow
-    - keras
+  - pip
