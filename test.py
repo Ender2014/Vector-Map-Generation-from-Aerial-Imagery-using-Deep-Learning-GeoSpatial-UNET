@@ -1,6 +1,6 @@
 import os
 import sys
-import gdal
+from osgeo import gdal
 import cv2
 import numpy as np
 import time as mtime

@@ -4,9 +4,9 @@ import numpy as np
 import os
 import cv2
 from src import io
-import gdal
-import ogr
-import osr
+from osgeo import gdal
+from osgeo import ogr
+from osgeo import osr
 import config
 import logging
 
@@ -15,7 +15,8 @@ from scipy.ndimage.interpolation import rotate
 from skimage.morphology import skeletonize as skt
 # from skimage.morphology import medial_axis
 from skimage.feature import peak_local_max
-from skimage.morphology import watershed, remove_small_objects
+from skimage.segmentation import watershed
+from skimage.morphology import remove_small_objects
 from scipy import ndimage as ndi
 from scipy.spatial import ConvexHull
 import fiona

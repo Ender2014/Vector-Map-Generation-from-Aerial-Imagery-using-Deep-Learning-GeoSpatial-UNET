@@ -1,6 +1,6 @@
 """ Input Output functions"""
 import cv2
-import gdal
+from osgeo import gdal
 import os
 import sys
 import numpy as np
@@ -9,8 +9,8 @@ from src.bf_grid import bf_grid
 from src.bf_grid import test_grid
 import math
 import json
-import ogr
-import osr
+from osgeo import ogr
+from osgeo import osr
 import logging
 
 
