@@ -81,10 +81,11 @@ def grid_file(path_data, path_output):
     """
     gridding = 'src/bf_gridding.py'
 
-    pFeatures = subprocess.call(['python3', gridding,
+    pFeatures = subprocess.call(['python', gridding,
                                  '-ps', str(config.image_size),
                                  str(config.image_size),
                                  '-overlap', str(config.overlap),
                                  '-targetDir', path_output,
                                  path_data])
     
+ 

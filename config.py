@@ -1,12 +1,12 @@
 import os
 
 # Path Inputs
-path_input = 'data/Buildings/train'
+path_input = 'data/train'
 # Inside this folder, should contain an image and label folder \
 # Example - train/image, train/label
 
-path_output = 'model/exp3'
-path_validation = 'data/Buildings/test'
+path_output = 'temp/outputs'
+path_validation = 'data/test'
 path_vali_output = os.path.join(path_output, 'validation')
 
 # generateDatset Parameters
@@ -25,6 +25,7 @@ epoch = 30
 overlap = 10
 batch = 32
 image_ext = ['.tif', '.tiff', '.vrt']
+num_workers = 6
 
 # Post Processing
 skeletonize_filter = 5
@@ -32,6 +33,7 @@ minimum_distance_watershed = 7.5  # 7.5m away buildings
 simplify_parameter = 0.7  # 0.7m can be adjusted while simplifying vectors
 erosion_filter = 3
 watershed_neighbour = 4  # 4 or 8
+prediction_threshold = 0.5 # 50% of the probability
 
 """
 ####################### DO NOT CHANGE BEYOND THIS ###########################

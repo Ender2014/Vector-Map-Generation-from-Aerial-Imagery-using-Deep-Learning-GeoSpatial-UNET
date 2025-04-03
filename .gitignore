@@ -1,3 +1,8 @@
+temp/outputs/log/*
+temp/outputs/merged_prediction/*
+temp/outputs/prediction/*
+temp/outputs/tiled/*
+
 # Folders
 /data
 /result

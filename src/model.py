@@ -4,7 +4,6 @@ from keras.layers import Input, concatenate, Conv2D, MaxPooling2D,\
 from keras.models import Model
 import logging
 
-
 def unet(image_size):
     inputs = Input((image_size, image_size, 3))
     logging.info(inputs.shape)

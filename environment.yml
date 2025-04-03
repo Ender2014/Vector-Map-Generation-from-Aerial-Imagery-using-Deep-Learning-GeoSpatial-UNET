@@ -17,3 +17,12 @@ dependencies:
   - pyshp
   - scikit-image
   - pip
+  - tensorflow=2.13.0
+  - pip: 
+      - geopandas
+      - rasterio
+      - xgboost
+      - lightgbm
+      - catboost
+      
+      
